@@ -1,0 +1,252 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf5e6; /* Light cream background */
+    color: #333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Elegant font for headers */
+}
+
+/* Header */
+header {
+    background-color: #4e342e; /* Rich chocolate brown */
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fdd835; /* Golden accent for brand name */
+}
+
+header .brand-name:hover {
+    color: #ffd54f;
+    transition: color 0.3s;
+}
+
+/* Landing Page */
+.landing-page {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('c3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fdd835;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 2s ease-in;
+}
+
+.landing-page h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.landing-page p {
+    font-size: 1.5rem;
+    max-width: 600px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Poster Page */
+.poster-page {
+    background-color: #efebe9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.poster-page h2 {
+    color: #4e342e;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* Available Delights Section */
+.available-delights {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* Gradient for a modern look */
+    color: #fff;
+    padding: 50px 0;
+}
+
+.available-delights h2 {
+    color: #ffd54f;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    color: #6d4c41; /* Chocolate color */
+    font-weight: bold;
+}
+
+.card-text {
+    color: #757575;
+}
+
+/* Events Section */
+.events-landing {
+    background-color: #f3e5f5;
+    padding: 60px 0;
+}
+
+.events-landing img {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.events-landing img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.events-landing h3 {
+    margin-top: 15px;
+    color: #4e342e;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #3e2723; /* Dark brown */
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #ffd54f;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Responsive Layout using Bootstrap */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .landing-page h1 {
+        font-size: 2.5rem;
+    }
+
+    .landing-page p {
+        font-size: 1.2rem;
+    }
+
+    .available-delights h2 {
+        font-size: 2rem;
+    }
+
+    .events-landing h3 {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border-color: #4e342e;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #4e342e;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #3e2723;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+}
